@@ -3,6 +3,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Map from "./Map";
 import Loader from "./Loader";
+import { Fragment } from "react";
 
 function MainBox() {
   const [eventData, setEventData] = useState([]);
@@ -24,11 +25,12 @@ function MainBox() {
   }, []);
 
   return (
-    <div>
-      Hola, soy el MAINBOX
-      <Header></Header>
-      <Sidebar></Sidebar>
-      {!loading ? <Map eventData={eventData} /> : <Loader />}
+    <div className="main">
+      <Header />
+      <div className="content">
+        <Sidebar />
+        {!loading ? <Map eventData={eventData} /> : <Loader />}
+      </div>
     </div> //Si no se carga la pagina, tira el Loader (spinner)
   );
 }
