@@ -1,4 +1,5 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
@@ -13,29 +14,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.content {
-  display: flex;
-}
-
-.sidebar {
-  display: flex;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -48,30 +26,29 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: red;
 }
 
 .map {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 72px);
   position: relative;
   display: flex;
 }
 
+/*Fuegos*/
 .location-icon {
   font-size: 2rem;
-  color: red;
+  color: #ff640d;
 }
 
+/*Spinner*/
 .loader {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
-
-.loader h1 {
-  margin-top: -100px;
 }
 
 .location-info {
@@ -94,4 +71,13 @@ body {
 
 .location-info li {
   padding: 5px 0;
+}
+
+/* Container data */
+.container-data {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+.container-data h1 {
+  font-size: 24px;
 }

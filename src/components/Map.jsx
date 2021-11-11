@@ -37,7 +37,7 @@ Map.defaultProps = {
     lat: -34.63950833473169,
     lng: -58.63203050779171,
   },
-  zoom: 6,
+  zoom: 4,
 };
 
 export default Map;
