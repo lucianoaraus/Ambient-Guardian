@@ -26,7 +26,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
+  background-color: #bebebe;
 }
 
 .map {
@@ -54,8 +54,8 @@ body {
 .location-info {
   width: 100%;
   padding: 32px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  background-color: #d45900;
+  /* background-color: rgba(0, 0, 0, 0.5); */
   font-size: 18px;
   color: white;
 }
@@ -69,13 +69,26 @@ body {
   padding: 5px 0;
 }
 
-/* Container data */
-/* .container-data {
-  background-color: #f7f7f7;
-  border-radius: 8px;
-  padding: 20px;
+.header {
+  background-color: #fff;
+  justify-content: center;
 }
-.container-data h1 {
-  font-size: 24px;
+
+.imglogo {
+  display: block;
+  margin: auto;
 }
- */
+
+.footer {
+  background-color: #669271;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content {
+  background-color: #fff;
+  padding: 18px;
+  font-size: 18px;
+  color: black;
+}

@@ -31,7 +31,7 @@ function App() {
 
   return (
     <Layout>
-      <div className="container-map mb-4">
+      <div className="container-map ">
         {!loading ? (
           <Map callback={listenerMap} eventData={eventData} />
         ) : (

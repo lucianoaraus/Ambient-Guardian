@@ -22,20 +22,6 @@ function Map({ callback, eventData, center, zoom }) {
     return null;
   });
 
-  /* const markers = eventData.map((ev) => {
-    if (ev.categories[0].id === 8) {
-      //comentar
-      return (
-        <LocationMarker
-          lat={ev.geometries[0].coordinates[1]} //0 -> longitud ; 1 -> latitud
-          lng={ev.geometries[0].coordinates[0]}
-          onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
-        />
-      );
-    }
-    return null;
-  }); */
-
   function handleClick(locationInfo) {
     callback(locationInfo);
   }

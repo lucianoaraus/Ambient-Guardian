@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <footer className="container mb-5">
+    <footer className="container">
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="footer row justify-content-center">
           <div className="col-auto">copyright @ All right reserved </div>
         </div>
       </div>
