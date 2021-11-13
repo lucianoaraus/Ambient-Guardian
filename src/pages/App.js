@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import Layout from "../components/layout/Layout";
 import Map from "../components/Map";
 import Loader from "../components/Loader";
+import LocationInfoBox from "../components/LocationInfoBox";
 
 function App() {
   const [eventData, setEventData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [locationInfo, setLocationInfo] = useState(null); //state
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -23,27 +25,21 @@ function App() {
     fetchEvents();
   }, []);
 
+  function listenerMap(data) {
+    setLocationInfo(data);
+  }
+
   return (
     <Layout>
       <div className="container-map mb-4">
         {!loading ? (
-          <Map
-            eventData={eventData}
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            allowfullscreen=""
-          />
+          <Map callback={listenerMap} eventData={eventData} />
         ) : (
           <Loader />
         )}
       </div>
-
-      <div className="container-data p-3 mb-4">
-        <h1>Event location info</h1>
-        <hr />
-        <h2>ID: </h2>
-        <h2>Title: </h2>
+      <div className="container-data ">
+        {locationInfo && <LocationInfoBox info={locationInfo} />}
       </div>
     </Layout>
   );

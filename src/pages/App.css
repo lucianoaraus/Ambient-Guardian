@@ -26,7 +26,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: red;
+  background-color: #fff;
 }
 
 .map {
@@ -52,12 +52,8 @@ body {
 }
 
 .location-info {
-  position: absolute;
-  top: 50px;
-  right: 40px;
-  width: 400px;
-  min-height: 200px;
-  padding: 20px;
+  width: 100%;
+  padding: 32px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   font-size: 18px;
@@ -74,10 +70,12 @@ body {
 }
 
 /* Container data */
-.container-data {
+/* .container-data {
   background-color: #f7f7f7;
   border-radius: 8px;
+  padding: 20px;
 }
 .container-data h1 {
   font-size: 24px;
 }
+ */
