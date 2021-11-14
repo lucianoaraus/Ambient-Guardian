@@ -3,7 +3,13 @@ function Footer() {
     <footer className="container">
       <div className="container">
         <div className="footer row justify-content-center">
-          <div className="col-auto">copyright @ All right reserved </div>
+          <div className="col-auto">
+            Github:{" "}
+            <a href="https://github.com/lucianoaraus">
+              <b>@lucianoaraus</b>
+            </a>
+            - copyright @ All right reserved
+          </div>
         </div>
       </div>
     </footer>

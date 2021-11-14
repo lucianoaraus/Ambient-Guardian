@@ -1,15 +1,12 @@
 function LocationInfoBox({ info }) {
   return (
     <div className="location-info">
-      <h2>Event Location Info</h2>
-      <ul>
-        <li>
-          ID: <strong>{info.id}</strong>
-        </li>
-        <li>
-          TITLE: <strong>{info.title}</strong>
-        </li>
-      </ul>
+      <h2 className="title">Event Location Info</h2>
+      <p>
+        <b>Id: </b> {info.id}
+        <br />
+        <b>Title:</b> {info.title}
+      </p>
     </div>
   );
 }
