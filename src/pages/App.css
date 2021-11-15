@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
 .App {
-  font-family: cursive;
   text-align: center;
 }
 
@@ -25,15 +26,13 @@
 
 body {
   margin: 0;
-  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Poppins", sans-serif;
   background-color: #bebebe;
 }
 
 .map {
   width: 100%;
-  height: calc(100vh - 72px);
+  height: 70vh;
   position: relative;
   display: flex;
   background-color: #fff;
@@ -41,18 +40,29 @@ body {
 
 /*Fuegos*/
 .location-icon {
-  font-size: 2rem;
-  color: #ff640d;
+  font-size: 1rem;
+  color: #ff843c;
 }
 
-/*Spinner*/
+.location-icon:hover {
+  font-size: 1.8rem;
+  transition-duration: 0.3s;
+  color: #ff2b06;
+}
+
+/*Spinner Div*/
 .loader {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: #fff;
+}
+
+.spinner {
+  width: 110px;
+  height: 110px;
 }
 
 .location-info {
@@ -115,4 +125,8 @@ a {
 
 .column {
   box-shadow: black;
+}
+
+hr {
+  opacity: 10%;
 }
