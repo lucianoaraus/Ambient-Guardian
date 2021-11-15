@@ -4,11 +4,13 @@ import Content from "./Content";
 
 function Layout({ children, ...res }) {
   return (
-    <div {...res}>
-      <Header />
-      <div className="container ">{children}</div>
-      <Content />
-      <Footer />
+    <div className="column">
+      <div {...res}>
+        <Header />
+        <div className="container ">{children}</div>
+        <Content />
+        <Footer />
+      </div>
     </div>
   );
 }

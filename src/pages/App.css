@@ -112,3 +112,7 @@ b {
 a {
   color: #fff;
 }
+
+.column {
+  box-shadow: black;
+}
