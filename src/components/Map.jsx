@@ -39,6 +39,9 @@ function Map({ callback, eventData, center, zoom }) {
         bootstrapURLKeys={{ key: "AIzaSyCoaFg3XMANXdGCDpkqgl0F9DFSl00U7I8" }}
         defaultCenter={center}
         defaultZoom={zoom}
+        options={{
+          styles: [{ stylers: [{ saturation: 30 }, { gamma: 0.5 }] }],
+        }}
       >
         {markers}
       </GoogleMapReact>
