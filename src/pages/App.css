@@ -30,6 +30,18 @@ body {
   background-color: #bebebe;
 }
 
+/* Scroll Personalizado */
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #bebebe;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #669271;
+  border-radius: 12px;
+  border-right: 4px solid #bebebe;
+}
+
 .map {
   width: 100%;
   height: 70vh;
@@ -69,7 +81,6 @@ body {
   width: 100%;
   padding: 32px;
   background-color: #e28c4f;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   font-size: 18px;
   color: white;
 }
@@ -108,7 +119,7 @@ body {
 }
 
 .title {
-  font-weight: 700;
+  font-weight: 1000;
 }
 
 p {
