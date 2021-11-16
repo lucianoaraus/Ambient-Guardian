@@ -1,9 +1,6 @@
 import { useState } from "react";
 import GoogleMapReact from "google-map-react";
 import LocationMarker from "./LocationMarker";
-import LocationInfoBox from "./LocationInfoBox";
-/* import { createGlobalState } from "react-hooks-global-state"; */
-import App from "../pages/App";
 
 function Map({ callback, eventData, center, zoom }) {
   const [locationInfo, setLocationInfo] = useState(null);
@@ -26,13 +23,6 @@ function Map({ callback, eventData, center, zoom }) {
     callback(locationInfo);
   }
 
-  /* const { setGlobalState, useGlobalState } = createGlobalState({
-    defaultCurrency: "usd",
-    language: "en",
-  });
-
-  export { useGlobalState, setGlobalState };*/
-
   return (
     <div class="map">
       <GoogleMapReact
@@ -45,11 +35,10 @@ function Map({ callback, eventData, center, zoom }) {
       >
         {markers}
       </GoogleMapReact>
-      {/* {locationInfo && <LocationInfoBox info={locationInfo} />} */}
     </div>
   );
 }
-
+//test
 Map.defaultProps = {
   center: {
     lat: -34.63950833473169,
