@@ -27,7 +27,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #bebebe;
+  background-color: rgb(204, 212, 207);
 }
 
 /* Scroll Personalizado */
@@ -134,8 +134,8 @@ a {
   color: #fff;
 }
 
-.column {
-  box-shadow: black;
+.drop-shadow {
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
 }
 
 hr {
