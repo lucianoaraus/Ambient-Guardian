@@ -4,7 +4,7 @@ import Content from "./Content";
 
 function Layout({ children, ...res }) {
   return (
-    <div className="column">
+    <div className="drop-shadow">
       <div {...res}>
         <Header />
         <Content />
