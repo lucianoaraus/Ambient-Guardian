@@ -7,8 +7,8 @@ function Layout({ children, ...res }) {
     <div className="column">
       <div {...res}>
         <Header />
-        <div className="container ">{children}</div>
         <Content />
+        <div className="container ">{children}</div>
         <Footer />
       </div>
     </div>

@@ -38,13 +38,13 @@ function Map({ callback, eventData, center, zoom }) {
     </div>
   );
 }
-//test
+
 Map.defaultProps = {
   center: {
-    lat: -34.63950833473169,
-    lng: -58.63203050779171,
+    lat: 37.287338042358016,
+    lng: -35.58304863137868,
   },
-  zoom: 4,
+  zoom: 2,
 };
 
 export default Map;
