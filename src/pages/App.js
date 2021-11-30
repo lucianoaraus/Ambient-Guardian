@@ -14,7 +14,7 @@ function App() {
     const fetchEvents = async () => {
       setLoading(true);
       const res = await fetch(
-        "https://eonet.sci.gsfc.nasa.gov/api/v2.1/events" //🚀
+        "https://eonet.gsfc.nasa.gov/api/v3/events" //V.3🚀
       );
       const { events } = await res.json(); //promesa
 
