@@ -8,7 +8,7 @@ import LocationInfoBox from "../components/LocationInfoBox";
 function App() {
   const [eventData, setEventData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [locationInfo, setLocationInfo] = useState(null); //state
+  const [locationInfo, setLocationInfo] = useState(null);
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -16,7 +16,7 @@ function App() {
       const res = await fetch(
         "https://eonet.gsfc.nasa.gov/api/v3/events" //V.3🚀
       );
-      const { events } = await res.json(); //promesa
+      const { events } = await res.json();
 
       setEventData(events);
       setLoading(false);
