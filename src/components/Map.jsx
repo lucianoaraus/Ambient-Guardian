@@ -1,17 +1,14 @@
-import { useState } from "react";
 import GoogleMapReact from "google-map-react";
 import LocationMarker from "./LocationMarker";
 
 function Map({ callback, eventData, center, zoom }) {
-  const [locationInfo, setLocationInfo] = useState(null);
-
   const markers = eventData.map((ev) => {
     if (ev.categories[0].id === 8) {
-      //comentar
+      //arreglar condicion y datos que se muestran
       return (
         <LocationMarker
-          lat={ev.geometries[0].coordinates[1]} //0 -> longitud ; 1 -> latitud
-          lng={ev.geometries[0].coordinates[0]}
+          lat={ev.geometry[0].coordinates[1]}
+          lng={ev.geometry[0].coordinates[0]}
           onClick={() => handleClick({ id: ev.id, title: ev.title })}
         />
       );
