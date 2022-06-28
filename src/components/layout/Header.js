@@ -1,4 +1,4 @@
-import logo from "../../assets/img/ambientguardianlogobaner.png";
+import logo from "../../assets/ambientguardianlogobaner.png";
 
 function Header() {
   return (
