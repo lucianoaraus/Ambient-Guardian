@@ -1,8 +1,7 @@
-function LocationInfoBox({ info }) {
+export default function LocationInfoBox({ info }) {
   return (
     <div className="location-info">
       <h2 className="title">Event Location Info</h2>
-      <hr />
       <p>
         <b>Id: </b> {info.id}
         <br />
@@ -11,5 +10,3 @@ function LocationInfoBox({ info }) {
     </div>
   );
 }
-
-export default LocationInfoBox;
