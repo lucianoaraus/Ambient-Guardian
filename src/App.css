@@ -27,7 +27,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #bebebe;
+  background-color: rgb(204, 212, 207);
 }
 
 /* Scroll Personalizado */
@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header {
-  background-color: #fff;
+  background-color: #669271;
   justify-content: center;
 }
 
