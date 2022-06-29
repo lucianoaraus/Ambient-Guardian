@@ -1,7 +1,7 @@
 # Ambient-Guardian
 Descubri algunos de los eventos forestales que estan pasando alrededor del mundo ahora mismo. Busca el 🔥 y hace click en él para ver mas detalles sobre lo que esta sucediendo.
 
-![Ambient-Guardian-Logo](https://github.com/lucianoaraus/Ambient-Guardian/blob/main/src/assets/img/ambientguardianlogobaner.png)
+![Ambient-Guardian-Logo](https://github.com/lucianoaraus/Ambient-Guardian/blob/main/src/assets/ambientguardianlogobaner.png)
 
 ## Sitio Web:
 https://ambientguardian.netlify.app/
