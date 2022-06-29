@@ -2,7 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Content from "./Content";
 
-function Layout({ children, ...res }) {
+export default function Layout({ children, ...res }) {
   return (
     <div className="drop-shadow">
       <div {...res}>
@@ -14,5 +14,3 @@ function Layout({ children, ...res }) {
     </div>
   );
 }
-
-export default Layout;

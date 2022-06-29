@@ -1,15 +1,13 @@
 import logo from "../../assets/ambientguardianlogobaner.png";
 
-function Header() {
+export default function Header() {
   return (
     <div className="container">
       <div className="header">
         <div className="col-auto">
-          <img src={logo} className="imglogo" alt="logo" width="350" />
+          <img src={logo} className="img-logo" alt="logo" width="350" />
         </div>
       </div>
     </div>
   );
 }
-
-export default Header;

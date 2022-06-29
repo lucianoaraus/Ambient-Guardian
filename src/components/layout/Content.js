@@ -1,4 +1,4 @@
-function Content() {
+export default function Content() {
   return (
     <footer className="container">
       <div className="container">
@@ -14,5 +14,3 @@ function Content() {
     </footer>
   );
 }
-
-export default Content;
