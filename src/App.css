@@ -4,42 +4,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: rgb(204, 212, 207);
-}
-
-/* Scroll Personalizado */
-body::-webkit-scrollbar {
-  width: 12px;
-  background-color: #bebebe;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #669271;
-  border-radius: 12px;
-  border-right: 2px solid #bebebe;
+  background-color: #ccd4cf;
 }
 
 .map {
@@ -62,27 +30,12 @@ body::-webkit-scrollbar-thumb {
   color: #ff2b06;
 }
 
-/*Spinner Div*/
-.loader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 70vh;
-  background-color: #fff;
-}
-
-.spinner {
-  width: 110px;
-  height: 110px;
-}
-
 .location-info {
   width: 100%;
   padding: 32px;
   background-color: #e28c4f;
   font-size: 18px;
-  color: white;
+  color: #ffffff;
 }
 
 .location-info ul {
@@ -94,19 +47,34 @@ body::-webkit-scrollbar-thumb {
   padding: 5px 0;
 }
 
+/*Spinner Div*/
+.spinner {
+  width: 110px;
+  height: 110px;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  background-color: #fff;
+}
+
 .header {
   background-color: #669271;
   justify-content: center;
 }
 
-.imglogo {
+.img-logo {
   display: block;
   margin: auto;
 }
 
 .footer {
   background-color: #669271;
-  color: white;
+  color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -115,7 +83,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #fff;
   padding: 18px;
   font-size: 18px;
-  color: black;
+  color: #000000;
 }
 
 .title {
@@ -135,5 +103,5 @@ a {
 }
 
 .drop-shadow {
-  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 20px #00000080);
 }

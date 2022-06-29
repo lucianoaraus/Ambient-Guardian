@@ -7,7 +7,15 @@ export default function Map({ callback, eventData, center, zoom }) {
       <LocationMarker
         lat={ev.geometry[0].coordinates[1]}
         lng={ev.geometry[0].coordinates[0]}
-        onClick={() => handleClick({ id: ev.id, title: ev.title })}
+        onClick={() =>
+          handleClick({
+            title: ev.title,
+            url: ev.sources[0].url,
+            magnitudeUnit: ev.geometry[0].magnitudeUnit,
+            magnitudeValue: ev.geometry[0].magnitudeValue,
+            updated: ev.geometry[0].date,
+          })
+        }
       />
     );
   });
@@ -21,7 +29,7 @@ export default function Map({ callback, eventData, center, zoom }) {
         defaultCenter={center}
         defaultZoom={zoom}
         options={{
-          styles: [{ stylers: [{ saturation: 30 }, { gamma: 0.5 }] }],
+          styles: [{ stylers: [{ saturation: 30 }, { gamma: 0.7 }] }],
         }}
       >
         {markers}
