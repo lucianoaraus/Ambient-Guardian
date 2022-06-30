@@ -105,3 +105,19 @@ a {
 .drop-shadow {
   filter: drop-shadow(0 0 20px #00000080);
 }
+
+.info-buton {
+  width: 34px;
+  height: 34px;
+
+  margin: 10px;
+  padding: 5px;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  filter: drop-shadow(0 0 20px #00000080);
+  background-color: #e2724f;
+}

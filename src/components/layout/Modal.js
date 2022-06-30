@@ -24,9 +24,9 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>
-        <SearchIcon />
-      </Button>
+      <div className="info-buton">
+        <SearchIcon onClick={handleOpen} />
+      </div>
       <Modal
         open={open}
         onClose={handleClose}

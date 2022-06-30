@@ -1,4 +1,5 @@
 import GoogleMapReact from "google-map-react";
+import BasicModal from "./layout/Modal";
 import LocationMarker from "./LocationMarker";
 
 export default function Map({ callback, eventData, center, zoom }) {
@@ -29,11 +30,14 @@ export default function Map({ callback, eventData, center, zoom }) {
         defaultCenter={center}
         defaultZoom={zoom}
         options={{
+          fullscreenControl: false,
+          zoomControl: false,
           styles: [{ stylers: [{ saturation: 30 }, { gamma: 0.7 }] }],
         }}
       >
         {markers}
       </GoogleMapReact>
+      <BasicModal />
     </div>
   );
 }
