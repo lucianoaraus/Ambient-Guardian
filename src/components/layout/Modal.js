@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import SearchIcon from "@mui/icons-material/Search";
 
 const style = {
   position: "absolute",
@@ -17,13 +18,15 @@ const style = {
 };
 
 export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen}>
+        <SearchIcon />
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -32,10 +35,12 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+            WORLD WILD FIRES IN REAL TIME
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            Discover what are some of the forestry events that are happening
+            anywhere in the world right now. Find the 🔥 that are you looking
+            for and Click On it to get more detail about the event.
           </Typography>
         </Box>
       </Modal>

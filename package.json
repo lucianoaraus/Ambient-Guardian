@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "@iconify/icons-mdi": "^1.1.38",
     "@iconify/react": "^3.0.1",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.6",
+    "@mui/styled-engine-sc": "^5.8.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -14,6 +19,7 @@
     "react-dom": "^17.0.2",
     "react-hooks-global-state": "^1.0.2",
     "react-scripts": "^4.0.3",
+    "styled-components": "^5.3.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
