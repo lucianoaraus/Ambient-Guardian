@@ -121,3 +121,16 @@ a {
   filter: drop-shadow(0 0 20px #00000080);
   background-color: #e2724f;
 }
+
+.modal-title {
+  font-family: sans-serif;
+  color: #669271;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.modal-description {
+  color: #868686;
+  font-weight: normal;
+  font-size: 22px;
+}
