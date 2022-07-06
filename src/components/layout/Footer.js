@@ -8,7 +8,7 @@ export default function Footer() {
             <a href="https://github.com/lucianoaraus">
               <b>@lucianoaraus</b>
             </a>
-            - copyright @ All right reserved
+            {" "}- copyright @ All right reserved
           </div>
         </div>
       </div>

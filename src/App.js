@@ -29,16 +29,16 @@ export default function App() {
 
   return (
     <Layout>
-      <div className="container-map ">
+      <>
         {!loading ? (
           <Map callback={listenerMap} eventData={eventData} />
         ) : (
           <Loader />
         )}
-      </div>
-      <div className="container-data ">
+      </>
+      <>
         {locationInfo && <LocationInfoBox info={locationInfo} />}
-      </div>
+      </>
     </Layout>
   );
 }

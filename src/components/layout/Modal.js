@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import SearchIcon from "@mui/icons-material/Search";
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 
 // pasar a un archivo aparte
 const style = {
@@ -31,7 +31,7 @@ export default function BasicModal() {
   return (
     <div>
       <div className="info-buton">
-        <SearchIcon onClick={handleOpen} />
+        <QuestionMarkIcon onClick={handleOpen} />
       </div>
       <Modal open={open} onClose={handleClose}>
         <Box sx={style}>
