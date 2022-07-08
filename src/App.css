@@ -73,6 +73,21 @@ body {
   padding: 5px 0;
 }
 
+.location-info-title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-button{
+  position: absolute;
+  top: 5%;
+  right: 1%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
 /*Spinner Div*/
 .spinner {
   width: 110px;

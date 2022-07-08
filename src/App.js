@@ -31,7 +31,7 @@ export default function App() {
     <Layout>
         {!loading ? (
           <Map callback={listenerMap} eventData={eventData} >
-            {locationInfo && <LocationInfoBox info={locationInfo} />}
+            {locationInfo && <LocationInfoBox info={locationInfo} callback={listenerMap} />}
           </Map>
         ) : (
           <Loader />

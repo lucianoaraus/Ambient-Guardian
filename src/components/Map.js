@@ -3,9 +3,10 @@ import BasicModal from "./layout/Modal";
 import LocationMarker from "./LocationMarker";
 
 export default function Map({ children, callback, eventData, center, zoom }) {
-  const markers = eventData.map((ev) => {
+  const markers = eventData.map((ev, id) => {
     return (
       <LocationMarker
+        key={id}
         lat={ev.geometry[0].coordinates[1]}
         lng={ev.geometry[0].coordinates[0]}
         onClick={() =>
