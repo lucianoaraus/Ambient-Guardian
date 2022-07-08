@@ -29,16 +29,13 @@ export default function App() {
 
   return (
     <Layout>
-      <>
         {!loading ? (
-          <Map callback={listenerMap} eventData={eventData} />
+          <Map callback={listenerMap} eventData={eventData} >
+            {locationInfo && <LocationInfoBox info={locationInfo} />}
+          </Map>
         ) : (
           <Loader />
         )}
-      </>
-      <>
-        {locationInfo && <LocationInfoBox info={locationInfo} />}
-      </>
     </Layout>
   );
 }

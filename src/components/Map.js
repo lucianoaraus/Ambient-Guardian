@@ -2,7 +2,7 @@ import GoogleMapReact from "google-map-react";
 import BasicModal from "./layout/Modal";
 import LocationMarker from "./LocationMarker";
 
-export default function Map({ callback, eventData, center, zoom }) {
+export default function Map({ children, callback, eventData, center, zoom }) {
   const markers = eventData.map((ev) => {
     return (
       <LocationMarker
@@ -37,6 +37,9 @@ export default function Map({ callback, eventData, center, zoom }) {
       >
         {markers}
       </GoogleMapReact>
+      <>
+        {children}
+      </>
       <BasicModal />
     </div>
   );

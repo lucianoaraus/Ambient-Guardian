@@ -6,7 +6,7 @@ Descubri algunos de los eventos forestales que estan pasando alrededor del mundo
 ## Sitio Web
 https://ambientguardian.netlify.app/
 
-Este desarrollo fue realizado utilizando una API de la **@NASA** que proporciona en tiempo real las coordenadas y descripcion de los eventos forestales que estan manifestandose alrededor del mundo. Tambien, se utilizo el servicio de **@GoogleMaps** para poder insertar en él dichos datos correspondientemente. La tecnologia utilizada es #_Reactjs_ y _#Nodejs_.
+Este desarrollo fue realizado utilizando una API de la **@NASA** que proporciona en tiempo real las coordenadas y descripcion de los eventos forestales que estan manifestandose alrededor del mundo. Tambien, se utilizo el servicio de **@GoogleMaps** para poder insertar en él dichos datos correspondientemente. La tecnologia utilizada fue #_Reactjs_.
 
 
 
